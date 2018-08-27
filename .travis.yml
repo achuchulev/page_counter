@@ -8,7 +8,11 @@ addons:
     packages:
     - curl
     - wget
+    - python-pip
+    - python3-pip
     - ruby
     - ruby-dev
+install:
+- bash -x scripts/provision.sh
 script:
 - bash -x test.sh
