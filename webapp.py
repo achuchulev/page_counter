@@ -16,6 +16,7 @@ def hello():
     #increment count by 1
     count+=1
     statsd.increment('app.web')
+    statsd.event('web app started', 'the web app has been started', alert_type='info')
     return "{}".format(count)
 
 if __name__ == "__main__":

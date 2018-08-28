@@ -12,7 +12,6 @@ addons:
     - python3-pip
     - ruby
     - ruby-dev
-    - datadog
 install:
 - bash -x scripts/provision.sh
 script:

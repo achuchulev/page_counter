@@ -12,7 +12,9 @@
 - in CLI and WEB app make a counter that send `count 1` on each run/visit
 
 
-metric name can be :
-- app.cli
-- app.web
+- add a counter metric for: 
+	- app.cli for CLI app
+	- app.web for WEB app
+
 - create dashboard that show both metrics
+- add event to CLI and WEB apps when the apps starts

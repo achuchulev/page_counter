@@ -7,5 +7,6 @@ from datadog import statsd
 count = 0
 count += 1
 
+statsd.event('cli app started', 'the cli app has been started', alert_type='info')
 statsd.increment('app.cli')
 print count
