@@ -2,7 +2,7 @@
 
 #test cli app
 out=$(python app.py)
-if [ "$out" > 0 ]; then
+if [ "$out" -gt 0 ]; then
   echo Good
 else
   echo Bad
@@ -17,7 +17,7 @@ sleep 3
 
 # test webapp
 out2=$(curl -sL http://127.0.0.1:8080)
-if [ "$out2" > 0 ]; then
+if [ "$out2" -gt 0 ]; then
   echo Good
 else
   echo Bad
