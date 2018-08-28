@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
+# Import statsd
+from datadog import statsd
 from flask import Flask
+
 app = Flask(__name__)
 
 #set variable to 0
@@ -12,6 +15,7 @@ def hello():
     global count
     #increment count by 1
     count+=1
+    statsd.increment('app.web')
     return "{}".format(count)
 
 if __name__ == "__main__":
