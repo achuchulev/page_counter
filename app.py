@@ -1,3 +1,7 @@
 #!/usr/bin/env python
 
-print "1"
+# define count variable
+count += 1
+
+print count
+
