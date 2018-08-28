@@ -2,7 +2,6 @@
 
 ## todo
 
-- add shell provisioner to vagrant, to run `scripts/provision.sh`
 - use a variable in CLI and WEBAPP that start counting in 1 and then increase to 2 3 4 etc
 - install manually for now datadog on laptop
 - install manually for now datadog on VM
@@ -16,3 +15,4 @@ metric name can be :
 
 
 ## done
+- add shell provisioner to vagrant, to run `scripts/provision.sh`
