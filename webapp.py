@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Import statsd
+# Import modules 
 from datadog import statsd
 from flask import Flask
 
